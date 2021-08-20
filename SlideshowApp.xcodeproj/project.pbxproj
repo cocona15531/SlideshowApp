@@ -14,6 +14,9 @@
 		B127C1AF26CCE3D2003A7E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B127C1AE26CCE3D2003A7E3D /* Assets.xcassets */; };
 		B127C1B226CCE3D2003A7E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B127C1B026CCE3D2003A7E3D /* LaunchScreen.storyboard */; };
 		B127C1BA26CCE68F003A7E3D /* ExpandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127C1B926CCE68F003A7E3D /* ExpandViewController.swift */; };
+		B127C1E226CFDC1A003A7E3D /* 1unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B127C1E126CFDC1A003A7E3D /* 1unsplash.jpg */; };
+		B127C1E426CFDC22003A7E3D /* 2unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B127C1E326CFDC22003A7E3D /* 2unsplash.jpg */; };
+		B127C1E626CFDC28003A7E3D /* 3unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B127C1E526CFDC28003A7E3D /* 3unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B127C1B126CCE3D2003A7E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B127C1B326CCE3D2003A7E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B127C1B926CCE68F003A7E3D /* ExpandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandViewController.swift; sourceTree = "<group>"; };
+		B127C1E126CFDC1A003A7E3D /* 1unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1unsplash.jpg; sourceTree = "<group>"; };
+		B127C1E326CFDC22003A7E3D /* 2unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2unsplash.jpg; sourceTree = "<group>"; };
+		B127C1E526CFDC28003A7E3D /* 3unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3unsplash.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				B127C1AE26CCE3D2003A7E3D /* Assets.xcassets */,
 				B127C1B026CCE3D2003A7E3D /* LaunchScreen.storyboard */,
 				B127C1B326CCE3D2003A7E3D /* Info.plist */,
+				B127C1E126CFDC1A003A7E3D /* 1unsplash.jpg */,
+				B127C1E326CFDC22003A7E3D /* 2unsplash.jpg */,
+				B127C1E526CFDC28003A7E3D /* 3unsplash.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -127,9 +136,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B127C1E426CFDC22003A7E3D /* 2unsplash.jpg in Resources */,
 				B127C1B226CCE3D2003A7E3D /* LaunchScreen.storyboard in Resources */,
 				B127C1AF26CCE3D2003A7E3D /* Assets.xcassets in Resources */,
 				B127C1AD26CCE3D0003A7E3D /* Main.storyboard in Resources */,
+				B127C1E226CFDC1A003A7E3D /* 1unsplash.jpg in Resources */,
+				B127C1E626CFDC28003A7E3D /* 3unsplash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

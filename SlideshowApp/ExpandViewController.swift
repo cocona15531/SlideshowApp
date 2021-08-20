@@ -10,6 +10,8 @@ import UIKit
 class ExpandViewController: UIViewController {
     
     @IBOutlet weak var expandImage: UIImageView!
+    @IBAction func backButton(_ sender: Any) {
+    }
     
     var expandImageView : UIImageView?
     
@@ -20,6 +22,7 @@ class ExpandViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         expandImage.image = expandImageView?.image
+        
     }
     
 }

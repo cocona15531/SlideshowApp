@@ -15,12 +15,18 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let expandViewController:ExpandViewController = segue.destination as! ExpandViewController
         expandViewController.expandImageView = photoimage
+        self.timer.invalidate()
+        self.timer = nil
+        gobutton.isEnabled = true
+        backbutton.isEnabled = true
+        changeButton.setTitle("再生", for: .normal)
     }
     
     
     @IBOutlet weak var photoimage: UIImageView!
     @IBOutlet weak var gobutton: UIButton!
     @IBOutlet weak var backbutton: UIButton!
+    @IBOutlet weak var changeButton: UIButton!
     
     var myimage:UIImageView!
     
@@ -41,7 +47,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        nowIndex += 1
         photoimage.image = imageArray[nowIndex]
     }
     
@@ -55,7 +60,7 @@ class ViewController: UIViewController {
     
     @IBAction func back(_ sender: Any) {
         nowIndex -= 1
-        if (nowIndex < 1) {
+        if (nowIndex < 0) {
             nowIndex = 2
         }
         photoimage.image = imageArray[nowIndex]
@@ -76,13 +81,19 @@ class ViewController: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil , repeats: true)
             gobutton.isEnabled = false
             backbutton.isEnabled = false
+            changeButton.setTitle("一時停止", for: .normal)
         } else {
             self.timer.invalidate()
             self.timer = nil
             gobutton.isEnabled = true
             backbutton.isEnabled = true
+            changeButton.setTitle("再生", for: .normal)
         }
     }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+
+        }
     
 }
 
