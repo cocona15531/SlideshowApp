@@ -13,6 +13,7 @@
 		B127C1AD26CCE3D0003A7E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B127C1AB26CCE3D0003A7E3D /* Main.storyboard */; };
 		B127C1AF26CCE3D2003A7E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B127C1AE26CCE3D2003A7E3D /* Assets.xcassets */; };
 		B127C1B226CCE3D2003A7E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B127C1B026CCE3D2003A7E3D /* LaunchScreen.storyboard */; };
+		B127C1BA26CCE68F003A7E3D /* ExpandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127C1B926CCE68F003A7E3D /* ExpandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B127C1AE26CCE3D2003A7E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B127C1B126CCE3D2003A7E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B127C1B326CCE3D2003A7E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B127C1B926CCE68F003A7E3D /* ExpandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				B127C1A726CCE3D0003A7E3D /* SceneDelegate.swift */,
 				B127C1A926CCE3D0003A7E3D /* ViewController.swift */,
 				B127C1AB26CCE3D0003A7E3D /* Main.storyboard */,
+				B127C1B926CCE68F003A7E3D /* ExpandViewController.swift */,
 				B127C1AE26CCE3D2003A7E3D /* Assets.xcassets */,
 				B127C1B026CCE3D2003A7E3D /* LaunchScreen.storyboard */,
 				B127C1B326CCE3D2003A7E3D /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B127C1BA26CCE68F003A7E3D /* ExpandViewController.swift in Sources */,
 				B127C1AA26CCE3D0003A7E3D /* ViewController.swift in Sources */,
 				B127C1A626CCE3D0003A7E3D /* AppDelegate.swift in Sources */,
 				B127C1A826CCE3D0003A7E3D /* SceneDelegate.swift in Sources */,
