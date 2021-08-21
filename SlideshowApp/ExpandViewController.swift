@@ -9,11 +9,11 @@ import UIKit
 
 class ExpandViewController: UIViewController {
     
-    @IBOutlet weak var expandImage: UIImageView!
+    @IBOutlet weak var expandImageview: UIImageView!
     @IBAction func backButton(_ sender: Any) {
     }
     
-    var expandImageView : UIImageView?
+    var expandviewer : UIImageView?
     
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ExpandViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        expandImage.image = expandImageView?.image
+        expandImageview.image = expandviewer?.image
         
     }
     

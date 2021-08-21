@@ -8,17 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBAction func tapAction(_ sender: Any) {
-    }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let expandViewController:ExpandViewController = segue.destination as! ExpandViewController
-        expandViewController.expandImageView = photoimage
-        self.timer.invalidate()
-        self.timer = nil
-        gobutton.isEnabled = true
-        backbutton.isEnabled = true
+        expandViewController.expandviewer = photoimage
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+            gobutton.isEnabled = true
+            backbutton.isEnabled = true
+        }
+        
         changeButton.setTitle("再生", for: .normal)
     }
     
@@ -92,13 +92,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
-
-        }
+        
+    }
     
 }
-
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let expandViewController:ExpandViewController = segue.destination as! ExpandViewController
-//        expandViewController.expandImage.image = photoimage.image
-//    }

@@ -16,48 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6zc-Od-cDQ">
-                                <rect key="frame" x="67" y="342" width="241" height="128"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Iul-TQ-Iv5" appends="YES" id="2gL-H1-Cbz"/>
-                                </connections>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbd-OI-6Jk">
-                                <rect key="frame" x="75" y="570" width="31" height="30"/>
-                                <state key="normal" title="進む"/>
-                                <connections>
-                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWf-Oj-RmG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-pl-B4B">
-                                <rect key="frame" x="177" y="570" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a9-pl-B4B">
+                                <rect key="frame" x="172" y="624" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d87-ZV-VFn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-2f-xGs">
-                                <rect key="frame" x="277" y="570" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngP-2f-xGs">
+                                <rect key="frame" x="284" y="624" width="31" height="30"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ahv-SL-Hyu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6zc-Od-cDQ">
+                                <rect key="frame" x="60" y="244" width="255" height="324"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6zc-Od-cDQ" secondAttribute="height" multiplier="85:108" id="Bgy-Mu-cYs"/>
+                                    <constraint firstAttribute="width" secondItem="6zc-Od-cDQ" secondAttribute="height" multiplier="85:108" id="Lpb-9m-LDJ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Iul-TQ-Iv5" appends="YES" id="2gL-H1-Cbz"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbd-OI-6Jk">
+                                <rect key="frame" x="60" y="624" width="31" height="30"/>
+                                <state key="normal" title="進む"/>
+                                <connections>
+                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWf-Oj-RmG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Vbd-OI-6Jk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="8to-tk-nbx"/>
-                            <constraint firstItem="9a9-pl-B4B" firstAttribute="top" secondItem="6zc-Od-cDQ" secondAttribute="bottom" constant="100" id="Jcx-x2-adz"/>
-                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kqm-AR-fkR"/>
-                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="298" id="anP-9i-4yy"/>
-                            <constraint firstItem="Vbd-OI-6Jk" firstAttribute="top" secondItem="6zc-Od-cDQ" secondAttribute="bottom" constant="100" id="bYV-f9-3ka"/>
-                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bmM-Mx-w7D"/>
-                            <constraint firstItem="ngP-2f-xGs" firstAttribute="leading" secondItem="9a9-pl-B4B" secondAttribute="trailing" constant="34" id="f8b-6e-xy2"/>
-                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="gLf-MG-y4b"/>
-                            <constraint firstItem="9a9-pl-B4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqe-sa-gZF"/>
-                            <constraint firstItem="ngP-2f-xGs" firstAttribute="top" secondItem="6zc-Od-cDQ" secondAttribute="bottom" constant="100" id="nT8-NT-iCq"/>
+                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="8R0-tn-l5t"/>
+                            <constraint firstItem="9a9-pl-B4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P57-Eb-hBO"/>
+                            <constraint firstItem="9a9-pl-B4B" firstAttribute="centerY" secondItem="Vbd-OI-6Jk" secondAttribute="centerY" id="Smd-yK-p8C"/>
+                            <constraint firstItem="ngP-2f-xGs" firstAttribute="centerY" secondItem="Vbd-OI-6Jk" secondAttribute="centerY" id="g03-gd-BeU"/>
+                            <constraint firstItem="Vbd-OI-6Jk" firstAttribute="top" secondItem="6zc-Od-cDQ" secondAttribute="bottom" constant="56" id="hG3-zt-vxd"/>
+                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hXp-Kd-MjR"/>
+                            <constraint firstItem="ngP-2f-xGs" firstAttribute="trailing" secondItem="6zc-Od-cDQ" secondAttribute="trailing" id="mhn-Gk-07W"/>
+                            <constraint firstItem="Vbd-OI-6Jk" firstAttribute="leading" secondItem="6zc-Od-cDQ" secondAttribute="leading" id="rtT-on-NCF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6zc-Od-cDQ" secondAttribute="trailing" constant="60" id="upT-66-OZ6"/>
+                            <constraint firstItem="6zc-Od-cDQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="wpO-1l-GP0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -85,31 +89,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eML-eM-fhg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKj-Og-NFb">
-                                <rect key="frame" x="321" y="20" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKj-Og-NFb">
+                                <rect key="frame" x="324" y="20" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gKj-Og-NFb" secondAttribute="height" multiplier="31:30" id="Dlv-C0-fou"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <action selector="backButton:" destination="FNm-V8-GGy" eventType="touchUpInside" id="s7d-Sm-1iq"/>
                                     <segue destination="9xr-hH-Ara" kind="unwind" unwindAction="unwind:" id="bRK-ft-bnm"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eML-eM-fhg">
+                                <rect key="frame" x="0.0" y="47" width="375" height="664"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VBu-mQ-8mY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="eML-eM-fhg" firstAttribute="centerX" secondItem="a4Z-fX-mfW" secondAttribute="centerX" id="9kN-hn-FC8"/>
-                            <constraint firstItem="eML-eM-fhg" firstAttribute="top" secondItem="VBu-mQ-8mY" secondAttribute="top" constant="222" id="Agi-cb-9TG"/>
+                            <constraint firstItem="eML-eM-fhg" firstAttribute="trailing" secondItem="VBu-mQ-8mY" secondAttribute="trailing" id="5LS-7i-M90"/>
+                            <constraint firstAttribute="bottom" secondItem="eML-eM-fhg" secondAttribute="bottom" constant="47" id="5r9-UT-CkU"/>
+                            <constraint firstItem="gKj-Og-NFb" firstAttribute="top" secondItem="VBu-mQ-8mY" secondAttribute="top" constant="20" id="DMR-hh-Y4G"/>
                             <constraint firstItem="eML-eM-fhg" firstAttribute="leading" secondItem="VBu-mQ-8mY" secondAttribute="leading" id="KWp-Yo-7ZS"/>
-                            <constraint firstItem="eML-eM-fhg" firstAttribute="centerY" secondItem="a4Z-fX-mfW" secondAttribute="centerY" id="tOr-Cc-clh"/>
+                            <constraint firstItem="eML-eM-fhg" firstAttribute="leading" secondItem="VBu-mQ-8mY" secondAttribute="leading" id="QqH-FV-ba4"/>
+                            <constraint firstItem="VBu-mQ-8mY" firstAttribute="trailing" secondItem="gKj-Og-NFb" secondAttribute="trailing" constant="20" id="XDt-nP-cIo"/>
+                            <constraint firstItem="eML-eM-fhg" firstAttribute="top" secondItem="a4Z-fX-mfW" secondAttribute="top" constant="47" id="zje-e8-IzA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Wq-Jg-4Pv"/>
                     <connections>
-                        <outlet property="expandImage" destination="eML-eM-fhg" id="rY7-lU-f42"/>
+                        <outlet property="expandImageview" destination="eML-eM-fhg" id="rY7-lU-f42"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chC-mB-x2p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
